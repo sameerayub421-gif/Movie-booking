@@ -99,6 +99,7 @@ $base_url = "/movie-booking-master/";
 
                                     <ul class="dropdown">
                                         <li><a href="<?php echo $base_url; ?>book-ticket/by-movie.php">By Movie</a></li>
+                                        <li><a href="<?php echo $base_url; ?>book-ticket/by-date.php">By Date</a></li>
                                         <li><a href="<?php echo $base_url; ?>book-ticket/by-theater.php">By Theater</a></li>
                                     </ul>
 
@@ -126,15 +127,7 @@ $base_url = "/movie-booking-master/";
 
                                 </li>
 
-                                <li>
-                                    <a href="#">More</a>
-
-                                    <ul class="dropdown">
-                                        <li><a href="<?php echo $base_url; ?>more/about-us.php">About Us</a></li>
-                                        <li><a href="<?php echo $base_url; ?>more/contact.php">Contact Us</a></li>
-                                    </ul>
-
-                                </li>
+                              
 
                             </ul>
 

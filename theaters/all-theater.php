@@ -56,21 +56,6 @@ $result = mysqli_query($connection, $select_query);
     </div>
 </section>
 
-<?php
-include('../base/footer.php');
-?>
-          class="btn">
-          View Movies
-       </a>
-
-    </div>
-
-<?php } ?>
-
-</div>
-
-</body>
-</html>
 
 <?php
 include('../base/footer.php');

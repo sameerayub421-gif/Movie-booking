@@ -68,13 +68,24 @@ $result = mysqli_query($connection, $select_query);
                             <?php echo $movie['genre']; ?>
 
                         </p>
+                    <div class="mt-3">
 
-                        <a href="../book-ticket/book-now.php?movie_id=<?php echo $movie['movie_id']; ?>"
-                           class="btn oneMusic-btn">
+<a href="../book-ticket/book-now.php?movie_id=<?php echo $movie['movie_id']; ?>"
+class="btn oneMusic-btn">
 
-                           Book Now
+Book Now
 
-                        </a>
+</a>
+
+<a href="<?php echo $movie['trailer_url']; ?>"
+target="_blank"
+class="btn btn-danger ml-2">
+
+View Trailer
+
+</a>
+
+</div>
 
                     </div>
 

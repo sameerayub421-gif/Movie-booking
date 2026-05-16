@@ -70,11 +70,24 @@ style="background-image: url('../img/bg-img/breadcumb.jpg');">
                             <?php echo $movie['duration']; ?> Min
                         </p>
 
-                        <a href="../book-ticket/by-movie.php?id=<?php echo $movie['movie_id']; ?>"
-                           class="btn oneMusic-btn">
-                           Pre Book
-                           <i class="fa fa-angle-double-right"></i>
-                        </a>
+                    <div class="mt-3">
+
+<a href="../book-ticket/book-now.php?movie_id=<?php echo $movie['movie_id']; ?>"
+class="btn oneMusic-btn">
+
+Book Now
+
+</a>
+
+<a href="<?php echo $movie['trailer_url']; ?>"
+target="_blank"
+class="btn btn-danger ml-2">
+
+View Trailer
+
+</a>
+
+</div>
 
                     </div>
 

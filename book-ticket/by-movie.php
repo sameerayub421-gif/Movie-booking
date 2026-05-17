@@ -69,7 +69,7 @@ select{
 
 .card img{
     width:100%;
-    height:320px;
+    height:400px;
     object-fit:cover;
 }
 
@@ -204,13 +204,24 @@ select{
 
         </p>
 
-        <a href="../book-ticket/by-movie.php?id=<?php echo $movie['movie_id']; ?>"
-           class="book-btn">
+    <div class="mt-3">
 
-           Book Now
+<a href="../book-ticket/book-now.php?movie_id=<?php echo $movie['movie_id']; ?>"
+class="btn oneMusic-btn">
 
-        </a>
+Book Now
 
+</a>
+
+<a href="<?php echo $movie['trailer_url']; ?>"
+target="_blank"
+class="btn btn-danger ml-2">
+
+View Trailer
+
+</a>
+
+</div>
     </div>
 
 <?php } ?>

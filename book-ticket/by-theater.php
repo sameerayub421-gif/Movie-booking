@@ -89,7 +89,7 @@ select{
 /* Image */
 .card img{
     width:100%;
-    height:200px;
+    height:400px;
     object-fit:cover;
 }
 
@@ -267,13 +267,24 @@ $current_theater = "";
             <?php echo $movie['end_time']; ?>
 
         </p>
+ <div class="mt-3">
 
-        <a href="../book-ticket/select-seat.php?id=<?php echo $movie['movie_id']; ?>"
-           class="btn">
+<a href="../book-ticket/book-now.php?movie_id=<?php echo $movie['movie_id']; ?>"
+class="btn oneMusic-btn">
 
-           Book Now
+Book Now
 
-        </a>
+</a>
+
+<a href="<?php echo $movie['trailer_url']; ?>"
+target="_blank"
+class="btn btn-danger ml-2">
+
+View Trailer
+
+</a>
+
+</div>
 
     </div>
 
